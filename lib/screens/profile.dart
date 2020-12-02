@@ -102,17 +102,3 @@ class _ProfileState extends State<Profile> {
     );
   }
 }
-
-  // Container(
-  //         height: 90.0,
-  //         width: 240.0,
-  //         color: Colors.grey,
-  //         child: Container(
-  //           decoration: BoxDecoration(
-  //               color: Colors.transparent,
-  //               borderRadius: BorderRadius.all(Radius.circular(10.0))),
-  //           child:  Center(
-  //             child:  Text("Hotel Grande",
-  //             style: TextStyle(fontSize: 22, color: Colors.black), 
-  //               textAlign: TextAlign.center,),
-  //           ))),

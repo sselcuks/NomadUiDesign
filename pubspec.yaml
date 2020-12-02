@@ -54,6 +54,7 @@ flutter:
     - assets/images/berlin.jpeg
     - assets/images/berlin2.jpg
     - assets/images/profile.jpg
+    - assets/images/weathergrid.png
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -12,7 +12,6 @@ class _ExploreState extends State<Explore> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     
       appBar: buildAppBar(),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -63,15 +62,15 @@ class _ExploreState extends State<Explore> {
                   ],
                 ),
               ),
+              
               SizedBox(
                 height: 20,
               ),
               Padding(
                 padding:  EdgeInsets.symmetric(horizontal: 20.0),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  //crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    
                     SizedBox(
                       height: 15,
                     ),
@@ -86,46 +85,50 @@ class _ExploreState extends State<Explore> {
                         ],
                       ),
                     ),
-                    
                     SizedBox(
                       height: 20,
-                    ),
-                    
-                      Padding(
-                        padding: EdgeInsets.only(left:2.0,top: 12),
-                        child: Container(
-                        height: 150,
-                        width: 150,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: AssetImage(mappins)),
-                        ) 
-                    ),
-                      ),Container(
-                        height: 150,
-                        width: 150,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: AssetImage(mappins)),
-                        ) 
-                    ),
-                  ],
+                    ),    
+                      ],
                 ),
               
-              )
+              ),
+            Card(child: Stack(children: [
+              Padding(
+                padding: const EdgeInsets.only(left:8.0),
+                child: Container(
+                          height: 150,
+                          width: 150,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: AssetImage(mappins)),
+                          ) 
+                      ),
+              ),
+                        Padding(
+                          padding: const EdgeInsets.only(left:208.0),
+                          child: Container(
+                            height: 150,
+                            width: 150,
+                            //margin: 
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: NetworkImage("https://images-na.ssl-images-amazon.com/images/I/71siLpTiEfL.png")),
+                            ) 
+                    ),
+                        ),
+            ],))  
             ],
           ),
         ),
-        
       ),
     );
   }
-
   Widget ExploreCard(image) {
+   
     return AspectRatio(
       aspectRatio: 2.62 / 1.5,
       child: Container(
